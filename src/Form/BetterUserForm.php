@@ -5,9 +5,11 @@ namespace DNADesign\UserFormExtras\Form;
 use SilverStripe\Core\Convert;
 use SilverStripe\ORM\ArrayList;
 use SilverStripe\View\ArrayData;
-use SilverStripe\UserForms\Form\UserForm;
 use SilverStripe\Control\HTTPRequest;
+use SilverStripe\ORM\ValidationResult;
+use SilverStripe\ORM\FieldType\DBField;
 use SilverStripe\Core\Injector\Injector;
+use SilverStripe\UserForms\Form\UserForm;
 
 /**
 * This class extension is to allow to resurface the error message
@@ -21,7 +23,7 @@ use SilverStripe\Core\Injector\Injector;
 
 class BetterUserForm extends UserForm
 {
-    public function validate()
+    public function validate(): ValidationResult
     {
         if ($this->validator) {
             $errors = $this->validator->validate();
