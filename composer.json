@@ -1,6 +1,6 @@
 {
-    "name": "dnadesign/userforms-extra",
-    "description": "Extends userforms default functionalities",
+    "name": "pikselin/userforms-extra",
+    "description": "Fork from DNADesign, Extends userforms default functionalities",
     "type": "silverstripe-vendormodule",
     "keywords": [
         "silverstripe",
